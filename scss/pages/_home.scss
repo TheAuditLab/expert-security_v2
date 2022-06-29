@@ -1,0 +1,245 @@
+body.home {
+
+
+main {
+
+	position: relative;
+	top: -36px;
+	margin-bottom: -36px;
+	z-index: 2;
+
+	@media(max-width: $screen-lg - 1px){
+		top: -55px;
+	}
+
+	@media(max-width: $screen-sm - 1px){
+		top: 91px;
+		margin-top: 0 !important;
+	}
+
+	section {
+
+		padding: 20px 0;
+
+		&#welcome {
+
+			padding-top: 0;
+
+			@media(max-width: $screen-md - 1px){
+				padding-top: 20px;
+			}
+
+
+
+			p:first-of-type {
+				display: inline-block;
+				font-size: 24px;
+				margin-bottom: 35px;
+
+				@media(max-width: $screen-sm - 1px){
+					font-size: 18px;
+				}
+			}
+
+		}
+
+
+		&#services {
+
+			.home-services {
+
+				display: flex;
+				flex-wrap: wrap;
+		
+				.home-service {
+
+					flex: 1;
+					color: #FFF;
+					text-align: center;
+					padding: 20px;
+					position: relative;
+					margin: 0 15px 15px 15px;
+
+					@media(max-width: $screen-sm - 1px){
+						margin: 0 0 30px 0;
+						flex-basis: 100%;
+					}
+
+					&:before {
+						content: '';
+						display: block;
+						position: absolute;
+						width: 100%;
+
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+
+						background: $blue;
+						z-index: 5;
+					}
+
+
+					.home-service-bg {
+
+						position: absolute;
+						width: 100%;
+
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-position: center;
+
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+
+						z-index: 6;
+
+						@include prefix(opacity, 0.15, webkit ms o);
+						@include prefix(filter, grayscale(100%), webkit ms o);
+
+						mix-blend-mode: luminosity;
+
+					}
+
+					&:first-of-type {
+						margin-left: 0;
+					}
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+
+					.home-service-content {
+
+						position: relative;
+						z-index: 7;
+
+						h2 {
+							font-size: 36px;
+							margin-top: 0;
+							margin-bottom: 20px;
+						}
+
+						a {
+
+							background: transparent;
+							border: 1px solid #FFF;
+							color: #FFF;;
+							font-weight: 700;
+							display: block;
+							margin: 0 10px;
+							padding: 10px;
+							font-size: 20px;
+
+							&:hover, &:focus {
+								background: #FFF;
+								color: $blue;
+							}
+						}
+					}
+
+						
+
+				}
+
+			}
+
+		}
+
+
+		&#featured-products {
+
+			background: $very_light_blue;
+			padding: 60px 0;
+			margin-top: 30px;
+
+			h4 {
+				margin-top: 0;
+				margin-bottom: 30px;
+				font-size: 24px;
+
+				@media(max-width: $screen-sm - 1px){
+					font-size: 20px;
+				}
+			}
+
+			
+			.featured-product {
+
+				display: block;
+				box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+				@include prefix(transition, box-shadow 0.3s ease, webkit ms o);
+
+				@media(max-width: $screen-md - 1px){
+					margin: 0 0 30px 0;
+				}
+
+
+
+				img {
+					width: 100%;
+				}
+
+				span {
+					display: block;
+					padding: 10px;
+					text-align: center;
+					color: #FFF;
+					background: $blue;
+					font-size: 18px;
+					@include prefix(transition, background 0.3s ease, ms moz o webkit);
+
+					@media(max-width: $screen-sm - 1px){
+						font-size: 14px;
+					}
+				}
+
+
+				&:hover, &:focus {
+
+					box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+						
+					span {
+						background: $dark_blue;
+					}
+
+
+				}
+			}
+
+		}
+
+
+		&#who-we-have-worked-with {
+
+			background: $green;
+			padding: 60px 0;
+
+			h4 {
+				margin-top: 0;
+				margin-bottom: 30px;
+				font-size: 24px;
+				color: #FFF;
+
+				@media(max-width: $screen-sm - 1px){
+					font-size: 20px;
+				}
+			}
+
+
+		}
+
+
+		
+
+	}
+}
+
+		
+
+		
+
+}

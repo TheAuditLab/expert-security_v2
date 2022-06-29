@@ -1,0 +1,16 @@
+$blue: #2798c2;
+$very_light_blue: #d3eaf3;
+$light_blue: #6ebbd7;
+$dark_blue: #173a69;
+
+$green: #64aa2c;
+
+
+
+@mixin prefix($property, $value, $prefixes: ()) {
+	@each $prefix in $prefixes {
+    	#{'-' + $prefix + '-' + $property}: $value;
+  	}
+
+  	#{$property}: $value;
+}

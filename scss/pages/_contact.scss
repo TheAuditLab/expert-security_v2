@@ -1,0 +1,75 @@
+main.contact-page {
+
+	.get-in-touch {
+
+		h1.title {
+			margin-bottom: 20px;
+		}
+
+		.call-for-chat {
+		    color: #163966;
+		    font-size: 22px;
+		    margin-top: 30px;
+
+		    span {
+		    	color: #64AA2C;
+    			font-weight: bold;
+		    }
+		}
+
+		label {
+
+			color: $blue;
+
+			i {
+				color: $green;
+			}
+		}
+
+	}
+
+	#enquire {
+
+		margin-bottom: 30px;
+		overflow: hidden;
+
+		input[type="text"], input[type="tel"], input[type="email"],textarea {
+			padding: 10px;
+			width: 100%;
+			margin-bottom: 10px;
+			border: 1px solid #a9a9a9;
+
+		}
+
+		textarea {
+			height: 202px;
+		}
+
+		// #button {
+		input[type="submit"] {
+			padding: 13px 90px;
+		    background: $green;
+		    border: 0;
+		    color: #FFF;
+		    font-weight: 700;
+		    border: 0;
+		    font-size: 16px;
+		    float: right;
+		    -webkit-transition: background 0.3s ease;
+		    -ms-transition: background 0.3s ease;
+		    -o-transition: background 0.3s ease;
+		    transition: background 0.3s ease;
+
+		    &:hover, &:focus {
+		    	background: darken($green, 10%);
+		    }
+
+		    @media(max-width: $screen-sm - 1px){
+		    	display: block;
+		    	width: 100%;
+		    }
+		}
+
+	}
+
+}

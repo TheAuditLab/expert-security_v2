@@ -1,0 +1,31 @@
+body.single-post {
+
+	img.alignleft {
+		float: left;
+		clear: both;
+		margin: 15px 15px 15px 0;
+		max-width: 100%;
+		height: auto;
+	}
+
+	img.alignright {
+		float: right;
+		clear: both;
+		margin: 15px 0 15px 15px;
+		max-width: 100%;
+		height: auto;
+	}
+
+	@media(max-width: $screen-sm - 1px){
+		main {
+			
+			img {
+
+				width: 100% !important;
+
+			}
+		}
+			
+	}
+
+}
