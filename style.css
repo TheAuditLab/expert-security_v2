@@ -6827,9 +6827,41 @@ ul.search-post-list li{width: 100%;}
 .search-icon{background:transparent; color:#2798c2;}
 }
 
-
-#page-banner-carousel img {
-  max-height: 350px;
+#mega-menu-header-menu {
+  padding: 0 !important;
+  margin-left: 40px !important;
+}
+.term-bollards #page-banner-carousel img {
+  max-height: 450px;
   object-fit: cover;
   object-position: center;
+}
+.term-bollards .contact-form {
+  background-color: rgba(39, 153, 194, 0.7);
+  padding: 20px;
+}
+.term-bollards .contact-form input {
+  width: 100%;
+  border: none;
+  height: 30px;
+}
+.term-bollards .banner-content {
+  bottom: 0 !important;
+}
+.term-bollards .banner-content h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.term-bollards .wpcf7-submit {
+  background-color: rgba(100, 170, 44, 0.8);
+  color: #ffffff;
+}
+.term-bollards .banner-content .row {
+  display: flex;
+  align-items: center;
+}
+.mega-menu-link {
+  font-size: 15px !important;
 }

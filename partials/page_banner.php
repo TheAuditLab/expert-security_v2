@@ -54,8 +54,14 @@
 					<div class="banner-content no-button">
 						<div class="container">
 							<div class="row">
-								<div class="col-xs-12">
+								<div class="col-xs-8">
 									<h1 class="banner-title"><?php echo $title; ?></h1>
+								</div>
+								<div class="col-xs-4 contact-form">
+									<h2>Unsure on the right bollard for you? </br>Enquire here and let us help you</h2>
+									<?php
+										echo(do_shortcode('[contact-form-7 id="2124" title="Contact form v2"]'));
+									?>
 								</div>
 							</div>
 						</div>
